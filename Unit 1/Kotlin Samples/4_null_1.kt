@@ -8,13 +8,15 @@
 // val in Kotlin means the variable is read-only (like final in Java)
 // var means the variable is mutable
 
-var name: String = "Android Developer"
-// name = null // Compilation error!
+fun main() {
+    var name: String = "Android Developer"
+    // name = null // Compilation error!
 
-// Nullable type - can hold null
-var nullableName: String? = "Kotlin"
-nullableName = null // Valid
+    // Nullable type - can hold null
+    var nullableName: String? = "Kotlin"
+    nullableName = null // Valid
 
-// Safe call operator (?.)
-val length = nullableName?.length // Returns null if nullableName is null
-println(length) // Output: null
+    // Safe call operator (?.)
+    val length = nullableName?.length // Returns null if nullableName is null
+    println(length) // Output: null
+}
