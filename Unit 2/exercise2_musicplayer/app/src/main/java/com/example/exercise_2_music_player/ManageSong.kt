@@ -42,7 +42,8 @@ class ManageSong : AppCompatActivity() {
 
 //        Setup the ExoPlayer
         player = ExoPlayer.Builder(this).build()
-        val mediaItem = MediaItem.fromUri(songUrl.substringAfter(" - "))
+//        Setup the media item to play using the URL retrieved from the intent
+        val mediaItem = MediaItem.fromUri("Example URL")
         player.setMediaItem(mediaItem)
         player.prepare()
 
@@ -84,11 +85,6 @@ class ManageSong : AppCompatActivity() {
 //            Reset the music
             player.seekTo(0)
         }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        player.release()
     }
 
 }
