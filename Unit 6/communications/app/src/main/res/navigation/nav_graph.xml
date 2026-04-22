@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nfcFragment">
+
+    <fragment
+        android:id="@+id/bluetoothFragment"
+        android:name="com.example.cit_238_communications.BluetoothFragment"
+        android:label="fragment_bluetooth"
+        tools:layout="@layout/fragment_bluetooth" />
+    <fragment
+        android:id="@+id/nfcFragment"
+        android:name="com.example.cit_238_communications.NfcFragment"
+        android:label="fragment_nfc"
+        tools:layout="@layout/fragment_nfc" />
+</navigation>
